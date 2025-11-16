@@ -1,0 +1,181 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* About Us Page Styles */
+.about-us-page {
+  min-height: 100vh;
+  background-color: #506a7a;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Main Content */
+.main-content {
+  padding: 30px 50px;
+}
+
+/* About Us Section */
+.about-section {
+  background-color: #d9dfe3;
+  padding: 60px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  border: 3px solid #4a9cc7;
+}
+
+.main-title {
+  font-size: 48px;
+  color: #2c4a5c;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #5c7a8a;
+  font-weight: normal;
+}
+
+/* Description Container */
+.description-container {
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+.description-text {
+  color: #e8eef2;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.description-text.emphasis {
+  font-style: italic;
+}
+
+/* Team Section */
+.team-section {
+  background-color: #b8c9d3;
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 32px;
+  color: #2c4a5c;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.team-member {
+  background-color: #3d5a6a;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.member-avatar {
+  width: 100px;
+  height: 100px;
+  background-color: #d9dfe3;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.member-info {
+  flex: 1;
+}
+
+.member-name {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.member-bio {
+  color: #d9dfe3;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* Journey Section */
+.journey-section {
+  background-color: #d9dfe3;
+  padding: 60px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.journey-title {
+  font-size: 36px;
+  color: #2c4a5c;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.journey-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.journey-btn {
+  background-color: #5c7a8a;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.journey-btn:hover {
+  background-color: #4a6575;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px;
+  }
+
+  .about-section {
+    padding: 40px 20px;
+  }
+
+  .main-title {
+    font-size: 36px;
+  }
+
+  .team-member {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .journey-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .journey-btn {
+    width: 200px;
+  }
+}
